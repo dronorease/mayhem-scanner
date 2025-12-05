@@ -9,27 +9,27 @@ git clone --recurse-submodules git@github.com:portapack-mayhem/mayhem-firmware.g
 
 Застосунок має знаходитись в `firmware/application/external/ext_scanner`
 
-![](img14.jpg)
+![](images/img14.jpg)
 
 Білд за допомогою `dockerize.sh`
 
-![](img15.jpg)
-![](img18.jpg)
+![](images/img15.jpg)
+![](images/img18.jpg)
 
 Переносити треба файли `build/firmware/portapack-mayhem-firmware.bin`, `build/firmware/portapack-mayhem_OCI.ppfw.tar` і `build/firmware/firmware_tar/APPS/ext_scanner.ppma`.
 
-![](img21.jpg)
+![](images/img21.jpg)
 
 Переносити можна за допомогою `build.sh` скріпту, але треба додати шлях до флешки (`DEVICE_ID`)
 
-![](img16.jpg)
-![](img19.jpg)
+![](images/img16.jpg)
+![](images/img19.jpg)
 
 Не забудьте додати застосунок в `external.cmake` і `external.ld` файли, які знаходяться в `firmware/application/external`. Див. їх контент можна знайти в прикріплених файлах.
 
 А також оновити `external_app_info.py`, який знаходиться в `firmware/tools`. Його контент можна знайти в прикріплених файлах.
 
-![](img17.jpg)
+![](images/img17.jpg)
 
 # Використання
 
@@ -37,16 +37,16 @@ git clone --recurse-submodules git@github.com:portapack-mayhem/mayhem-firmware.g
 
 Застосунок знаходиться в меню `Utilities`
 
-![](img1.jpg)
+![](images/img1.jpg)
 
 під назвою `Spectrum Scan`
 
-![](img2.jpg)
+![](images/img2.jpg)
 
 ### START
 Кнопка `START` запускає сканування в обраних діапазонах (`ranges`) сигналів обраної ширини (можна обрати мінімальну і максимальну) (`BW Min`/`BW Max`) і з обраною силою сигналу (вище за) (`threshold`).
 
-![](img3.jpg)
+![](images/img3.jpg)
 
 Після запуску, сканер почне сканувати обрані діапазони і якщо буде знайдено куполоподібний сигнал, який підходить під наші налаштування, сканер видасть короткий сигнал і продовжить сканування. Кожен знайдений сигнал буде супроводжуватись коротким звуковим сигналом. Коли сканер добіжить кінця останнього діапазону, він обере найсильніший сигнал, виведе його на екран і видасть довший звуковий сигнал.
 Якщо за всі діапазони не було знайдено жодного підходящого сигналу, сканер продовжить сканування допоки сигнал не знайдеться, або користувач не припинить сканування. 
@@ -54,11 +54,11 @@ git clone --recurse-submodules git@github.com:portapack-mayhem/mayhem-firmware.g
 ### Manage ranges
 Кнопка `Manage ranges` відкриває меню налаштувань діапазонів
 
-![](img4.jpg)
+![](images/img4.jpg)
 
 де можна налаштовувати діапазони, додавати нові і вікдлючати або видаляти існуючі (видалення працює в межах одного використання, після перезапуску застосунку все скинеться і знову будуть запропоновані 3 діапазони за замовчуванням).
 
-![](img5.jpg)
+![](images/img5.jpg)
 
 ## Трансфер файлів
 
@@ -67,27 +67,27 @@ git clone --recurse-submodules git@github.com:portapack-mayhem/mayhem-firmware.g
 ### SD Over USB
 Ця утіліта знаходиться в меню `Utilities`
 
-![](img1.jpg)
+![](images/img1.jpg)
 
 під назвою `SD Over USB`.
 
-![](img6.jpg)
+![](images/img6.jpg)
 
 Після її відкриття буде вікно підтвердження, де потрібно натиснути `Run`.
 
-![](img7.jpg)
+![](images/img7.jpg)
 
 Девайс має виглядати ось так:
 
-![](img8.jpg)
+![](images/img8.jpg)
 
 Після цього, через декілька секунд, флеш карта з'явиться в списку девайсів компьютера і на неї можна буде переносити файли.
 
-![](img20.jpg)
+![](images/img20.jpg)
 
 Щоб вийти з режиму SD Over USB потрібно натиснути кнопку RESET зверху девайсу (кнопка праворуч):
 
-![](img9.jpg)
+![](images/img9.jpg)
 
 ## Прошивка
 
@@ -95,20 +95,20 @@ git clone --recurse-submodules git@github.com:portapack-mayhem/mayhem-firmware.g
 
 Ця утіліта знаходиться в меню `Utilities`
 
-![](img1.jpg)
+![](images/img1.jpg)
 
 під назвою `Flash Utility`.
 
-![](img10.jpg)
+![](images/img10.jpg)
 
 Після її відкриття потрібно буде обрати файл, з якого потрібно встановити прошивку. Якщо ви просто копіюєте файли на флеш накопичувач без зміни їх імен або використовуєте `move.sh`, то вам просто потрібно обрати перший файл у списку
 
-![](img11.jpg)
+![](images/img11.jpg)
 
 і підтвердити встановлення прошивки.
 
-![](img12.jpg)
+![](images/img12.jpg)
 
 Після цього девайс почне процес інсталяції і перезапуститься через декілька секунд.
 
-![](img13.jpg)
+![](images/img13.jpg)
