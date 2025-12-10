@@ -16,7 +16,7 @@ git clone --recurse-submodules git@github.com:portapack-mayhem/mayhem-firmware.g
 ![](images/img15.jpg)
 ![](images/img18.jpg)
 
-Переносити треба файли `build/firmware/portapack-mayhem-firmware.bin`, `build/firmware/portapack-mayhem_OCI.ppfw.tar` і `build/firmware/firmware_tar/APPS/ext_scanner.ppma`.
+Переносити треба файли `build/firmware/portapack-mayhem-firmware.bin`, `build/firmware/portapack-mayhem_OCI.ppfw.tar` в папку `FIRMWARE` на флеш накопичувачі і `build/firmware/firmware_tar/APPS/ext_scanner.ppma` в папку `APPS` на флещ накопичувачі.
 
 ![](images/img21.jpg)
 
